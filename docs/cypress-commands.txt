@@ -1,7 +1,6 @@
 # path where Cypress will be installed
 $ cd /project/path
 
-
 # initialize your project
 npm init -y
 

@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/iamgauravkhanna/hands-on-cypress-io#readme",
   "devDependencies": {
-    "cypress": "^9.6.1"
+    "cypress": "^10.0.2"
   }
 }
