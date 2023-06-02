@@ -1,4 +1,4 @@
-echo "Which Repo ?"
+echo "Which Git Repo ?"
 
 git config --get remote.origin.url 
 
