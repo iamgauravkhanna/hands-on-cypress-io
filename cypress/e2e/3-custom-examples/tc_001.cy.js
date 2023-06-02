@@ -1,12 +1,13 @@
-describe('TC_001', () => {
-    beforeEach(() => {      
-      cy.visit('https://example.cypress.io/todo')
-    })
+describe('Search for Google Wiki page from Wikipedia website', () => {
+  before(() => {
+      cy.visit('https://wikipedia.org')
+  })
 
-    it('step#1', () => {
-      // We use the `cy.get()` command to get all elements that match the selector.
-      // Then, we use `should` to assert that there are two matched items,
-      // which are the two default items.
-      cy.visit('https://www.google.com')
-    })
-})    
+  it('Validate Page Title', () => {
+      cy.title().should('eq', 'Wikipedia')
+      cy.get('#searchInput').type('india')
+      cy.get('button[type="submit"]').click()
+      cy.get('h1#firstHeading').contains('India')
+      cy.title().should('eq', 'India - Wikipedia')
+  })
+})
