@@ -1,3 +1,7 @@
+echo "Which Repo ?"
+
+git config --get remote.origin.url 
+
 ls -ltr
 
 git status
